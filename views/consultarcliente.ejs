@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/stylesheets/normalize.css" />
+    <link rel="stylesheet" href="/stylesheets/reset.css" />
+    <link rel="stylesheet" href="/stylesheets/grid.css" />
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+    <link rel="stylesheet" href="/stylesheets/consultarcliente.css" />
+    <title>Chamy pizzas - Consulta de cliente</title>
+  </head>
+  <body>
+    <header class="cabecalho">
+      <div class="container">
+        <a href="/index" class="grid-4">
+          <img src="/images/marca.svg" alt="Chamy pizzas" />
+        </a>
+        <nav class="grid-12 cabecalho_menu">
+          <ul>
+            <li><a href="/cardapio">Cardápio</a></li>
+            <!-- Links de cabeçalho -->
+            <li><a href="/sobre">Sobre</a></li>
+            <li><a href="/contato">Contato</a></li>
+            <li><a href="/agendar">Agendar</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section class="container fundo">
+      <section class="container cadastro">
+        <div class="grid-5">
+          <h1 class="subtitulo_interno">Clientes</h1>
+          <% docs.forEach(function(Cliente){ %>
+          <ul>
+            
+              <li >
+                  <a href="/cliente/<%= Cliente._id %>"><p><%= Cliente.nome +" "+ Cliente.sobrenome%></p></a>
+              </li>
+            
+          </ul>
+          <% })%>
+        </div>
+        <div class="grid-10 form_cadastro">
+          <a href="/gerencia" class="btn btn-preto gerenciamento">Gerenciamento</a>
+        </div>
+      </section>
+    </section>
+    <footer>
+      <div class="footer">
+        <div class="container">
+          <div class="grid-8 footer_historia">
+            <h3>Nossa história</h3>
+            <p>
+              "O verdadeiro segredo de fazer deliciosas pizzas está na paixão,
+              carinho, dedicação e preparo, ingredientes que não pode faltar em
+              uma pizzaria"
+            </p>
+          </div>
+          <div class="grid-4 footer_contato">
+            <h3>Contato</h3>
+            <ul>
+              <li>- 11 4715 3120</li>
+              <li>- Alumínio - SP</li>
+            </ul>
+          </div>
+          <div class="grid-4 footer_redes">
+            <h3>Redes sociais</h3>
+            <ul>
+              <li>
+                <a class="fb" href="https://facebook.com" target="_blank"
+                  ><img src="/images/facebook.png" alt=""
+                /></a>
+              </li>
+              <li>
+                <a href="https://instagram.com" target="_blank"
+                  ><img src="/images/instagram.png" alt=""
+                /></a>
+              </li>
+              <li>
+                <a href="https://whatsapp.com" target="_blank"
+                  ><img src="/images/whatsapp.png" alt=""
+                /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="copy">
+        <div class="container">
+          <p class="grid-16">
+            Chamy Pizzas 2020 - Alguns os direitos reservados
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

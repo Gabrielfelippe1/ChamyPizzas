@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="643" height="173.573" viewBox="0 0 643 173.573">
+  <g id="Qualidade" transform="translate(1.5)">
+    <path id="linha_direita" data-name="linha direita" d="M1040,2070.8h220v80" transform="translate(-620 -1977.227)" fill="none" stroke="#bc1e2c" stroke-width="3"/>
+    <path id="linha_esquerda" data-name="linha esquerda" d="M1260,2070.8H1040v80" transform="translate(-1040 -1977.227)" fill="none" stroke="#bc1e2c" stroke-width="3"/>
+    <path id="linha_meio" data-name="linha meio" d="M930,2085v50" transform="translate(-610 -1962.3)" fill="none" stroke="#bc1e2c" stroke-width="3"/>
+    <path id="Path_19" data-name="Path 19" d="M190,9.9V112.88H10V9.9ZM200,0H0V122.781H200Z" transform="translate(220)" fill="#bc1e2c"/>
+    <text id="chamy_pizzas" data-name="chamypizzas" transform="translate(237 55)" font-size="40" font-family="Georgia-Bold, Georgia" font-weight="700"><tspan x="0" y="0">CHAMY</tspan><tspan x="0" y="40">PIZZAS</tspan></text>
+  </g>
+</svg>

@@ -1,0 +1,52 @@
+.cadastro{
+  margin-top: 150px;
+  display:inline-block;
+}
+
+
+p {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 18px;
+  line-height: 20px;
+  margin-bottom: 10px;
+  width: 400px;
+}
+
+
+.botao .ag{
+  padding:10px 37px ;
+  position:absolute;
+  margin: -130px 0 0 409px;
+}
+.botao .eg{
+  padding:10px 47px ;
+  position:absolute;
+  margin: -130px 0 0 689px;
+}
+.botao .ah{
+  padding:10px 37.5px ;
+  position:absolute;
+  margin: -50px 0 0 409px;
+}
+.botao .eh{
+  padding:10px 48px ;
+  position:absolute;
+  margin: -50px 0 0 689px;
+}
+.botao .cc{
+  padding:10px 37.5px ;
+  position:absolute;
+  margin: 30px 0 0 409px;
+}
+.botao .ca{
+  padding:10px 29.8px ;
+  position:absolute;
+  margin: 30px 0 0 689px;
+}
+
+
+
+.footer {
+  margin-top: 238px;
+}
+

@@ -1,0 +1,98 @@
+.fundo{
+    width: 100%;
+    height: 460px;
+    background-color: #F5F5F5;
+}
+
+.login {
+  margin-top: 135px;
+}
+
+.login p {
+  padding-right: 15px;
+}
+.form_login {
+  background-color: #fff;
+  margin-left: 80px;
+  width: 510px;
+  height: 350px;
+ 
+		-webkit-box-shadow: 3px 3px 6px rgba(50, 50, 50, 0.15);
+		-moz-box-shadow:    3px 3px 6px rgba(50, 50, 50, 0.15);
+		box-shadow:         3px 3px 6px rgba(50, 50, 50, 0.15);
+}
+
+.dados_login {
+  height: 300px;
+  width: 440px;
+  margin: 30px 35px auto 35px;
+}
+.dados_login input{
+ display: block;
+ width: 440px;
+ height: 50px;
+ border: 1px solid #ECEDEF;
+ background: none;
+ font-size: 20px;
+  font-family: Georgia, "Times New Roman", serif;
+  padding: 7px 10px;
+  outline: none;
+  margin-bottom: 20px;
+}
+
+.dados_login .btn-entrar{
+    cursor: pointer;
+    width:220px ;
+    height: 50px;
+    margin-left: 110px;
+    font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: bold;
+  background: none;
+  background: #fdca3b;
+  border: none;
+  border-radius: 5px;
+}
+
+.login p:after{
+    content: "";
+  position: absolute;
+  width: 440px;
+  height: 1px;
+  background: #ECEDEF;
+  margin-top: 130px;
+  margin-left: 387.5px;
+}
+
+.dados_login .btn-entrar:hover{
+    transition: 0.5s;
+    background: #ffbb1f;
+    
+}
+.btn-preto-amarelo{
+   display: inline-block;
+    width: 180px;
+    height: 40px;
+    border: 3px solid #000;
+    padding: 10px 30px;
+    color: #000;
+    text-align: center;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 60px;
+    margin-left: 130px;
+
+}
+.btn-preto-amarelo:hover{
+    
+    border: 3px solid #fdca3b;
+    
+    color: #fdca3b;
+} 
+.footer{
+    margin-top: 55px;
+}
+

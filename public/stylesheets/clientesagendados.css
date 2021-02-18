@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.interna_sobre{
+    background: url("/images/agendar.png") no-repeat center;
+    background-size: cover;
+}
+.cont{
+    width: 100%;
+    height: 100%;
+
+color: #000;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.cadastro{
+    margin-top: 30px;
+}
+.cadastro .gerenciamento{
+    margin-left: 425px;
+}
+.footer{
+    margin-top: 50px;
+}

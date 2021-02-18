@@ -1,0 +1,19 @@
+.cadastro {
+  margin-top: 135px;
+}
+p {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 18px;
+  line-height: 20px;
+  margin-bottom: 10px;
+}
+
+.footer {
+  margin-top: 315px;
+}
+
+.form_cadastro .gerenciamento{
+  margin: 0 0 0 425px;
+  position: absolute;
+  
+}

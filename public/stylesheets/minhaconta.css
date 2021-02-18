@@ -1,0 +1,23 @@
+.cadastro {
+  margin-top: 150px;
+}
+p {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 18px;
+  line-height: 20px;
+  margin-bottom: 10px;
+  width: 400px;
+}
+
+.botao{
+  position: absolute;
+  margin: -125px 0 0 400px;
+}
+
+.botao a{
+  margin-right: 40px;
+}
+
+.footer {
+  margin-top: 218px;
+}

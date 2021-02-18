@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/stylesheets/normalize.css" />
+    <link rel="stylesheet" href="/stylesheets/reset.css" />
+    <link rel="stylesheet" href="/stylesheets/grid.css" />
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+    <link rel="stylesheet" href="/stylesheets/cliente.css" />
+    <title>Chamy pizzas - Consulta de cliente</title>
+  </head>
+  <body>
+    <header class="cabecalho">
+      <div class="container">
+        <a href="/index" class="grid-4">
+          <img src="/images/marca.svg" alt="Chamy pizzas" />
+        </a>
+        <nav class="grid-12 cabecalho_menu">
+          <ul>
+            <li><a href="/cardapio">Cardápio</a></li>
+            <!-- Links de cabeçalho -->
+            <li><a href="/sobre">Sobre</a></li>
+            <li><a href="/contato">Contato</a></li>
+            <li><a href="/agendar">Agendar</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section class="container fundo">
+      <section class="container cadastro">
+        <div class="grid-5">
+          <h1 class="subtitulo_interno"><%=title%></h1>
+        </div>
+        <div class="grid-10 form_cadastro">
+          <a href="/gerencia" class="btn btn-preto gerenciamento"
+            >Gerenciamento</a
+          >
+        </div>
+        <form class="grid-14 cliente" action="<%=action%>">
+          
+          <div class="grid-2 Nomee">
+            <p>Nome</p>
+            <input type="text" id="Nomee" name="nome" value="<%=doc.nome%>" />
+          </div>
+          <div class="grid-4 Sobrenome">
+            <p>Sobrenome</p>
+            <input type="text" id="Sobrenome" name="sobrenome" value="<%=doc.sobrenome%>"/>
+          </div>
+          <div class="grid-2 CPF">
+            <p>CPF</p>
+            <input type="text" id="CPF" name="cpf" value="<%=doc.cpf%>"/>
+          </div>
+          <div class="grid-2 Telefone">
+            <p>Telefone</p>
+            <input type="text" id="Telefone" name="telefone" value="<%=doc.telefone%>"/>
+          </div>
+          <div class="grid-2 Sexo">
+            <p>Sexo</p>
+            <input type="text" id="Sexo" name="sexo" value="<%=doc.sexo%>"/>
+          </div>
+          <div class="grid-2 Nascimento">
+            <p>Nascimento</p>
+            <input type="text" id="Nascimento" name="nascimento" value="<%=doc.nascimento%>"/>
+          </div>
+          <div class="grid-3 E-mail">
+            <p>E-mail</p>
+            <input type="text" id="E-mail" name="email" value="<%=doc.email%>"/>
+          </div>
+          <div class="grid-4 Rua">
+            <p>Rua</p>
+            <input type="text" id="Rua" name="endereco" value="<%=doc.endereco%>"/>
+          </div>
+          <div class="grid-1 Nº">
+            <p>Nº</p>
+            <input type="text" id="Nº" name="numero" value="<%=doc.num%>"/>
+          </div>
+          <div class="grid-3 Bairro">
+            <p>Bairro</p>
+            <input type="text" id="Bairro" name="bairro" value="<%=doc.bairro%>"/>
+          </div>
+          <div class="grid-3 Cidade">
+            <p>Cidade</p>
+            <input type="text" id="Cidade" name="cidade" value="<%=doc.cidade%>"/>
+          </div>
+          <div class="grid-1 Estado">
+            <p>UF</p>
+            <input type="text" id="Estado" name="uf" value="<%=doc.uf%>"/>
+          </div>
+          <div class="grid-2 CEP">
+            <p>CEP</p>
+            <input type="text" id="CEP" name="cep" value="<%=doc.cep%>"/>
+          </div>
+         
+        </form>
+      </section>
+    </section>
+    <footer>
+      <div class="footer">
+        <div class="container">
+          <div class="grid-8 footer_historia">
+            <h3>Nossa história</h3>
+            <p>
+              "O verdadeiro segredo de fazer deliciosas pizzas está na paixão,
+              carinho, dedicação e preparo, ingredientes que não pode faltar em
+              uma pizzaria"
+            </p>
+          </div>
+          <div class="grid-4 footer_contato">
+            <h3>Contato</h3>
+            <ul>
+              <li>- 11 4715 3120</li>
+              <li>- Alumínio - SP</li>
+            </ul>
+          </div>
+          <div class="grid-4 footer_redes">
+            <h3>Redes sociais</h3>
+            <ul>
+              <li>
+                <a class="fb" href="https://facebook.com" target="_blank"
+                  ><img src="/images/facebook.png" alt=""
+                /></a>
+              </li>
+              <li>
+                <a href="https://instagram.com" target="_blank"
+                  ><img src="/images/instagram.png" alt=""
+                /></a>
+              </li>
+              <li>
+                <a href="https://whatsapp.com" target="_blank"
+                  ><img src="/images/whatsapp.png" alt=""
+                /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="copy">
+        <div class="container">
+          <p class="grid-16">
+            Chamy Pizzas 2020 - Alguns os direitos reservados
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

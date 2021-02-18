@@ -1,0 +1,14 @@
+.interna_sobre{
+    background: url("../Fotos/agendar.png") no-repeat center;
+    background-size: cover;
+}
+.calendario{
+    text-align: right;
+}
+.calendario .btn-preto {
+    display: inline-block;
+    margin: 20px 0 20px 40px;
+
+}
+
+

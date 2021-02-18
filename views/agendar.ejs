@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/stylesheets/normalize.css" />
+    <link rel="stylesheet" href="/stylesheets/reset.css" />
+    <link rel="stylesheet" href="/stylesheets/grid.css" />
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+    <link rel="stylesheet" href="/stylesheets/agendar.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+    <title>Chamy pizzas - Agendar</title>
+  </head>
+  <body>
+    <header class="cabecalho">
+      <div class="container">
+        <a href="/index" class="grid-4">
+          <img src="/images/marca.svg" alt="Chamy pizzas" />
+        </a>
+        <nav class="grid-12 cabecalho_menu">
+          <ul>
+            <li><a href="/cardapio">Cardápio</a></li>
+            <!-- Links de cabeçalho -->
+            <li><a href="/sobre">Sobre</a></li>
+            <li><a href="/contato">Contato</a></li>
+            <li><a href="/agendar" class="menu_ativo">Agendar</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <section class="introducao_interna interna_sobre">
+      <div class="container">
+        <h1>Agendar</h1>
+
+        <p>Agende uma visita em nosso estabelecimento</p>
+      </div>
+    </section>
+    <section class="container calendario">
+      <div class="grid-16 botao">
+        <a href="/login" class="btn btn-preto">Fazer Login</a>
+        <a href="/cadastro" class="btn btn-preto">Cadastre-se</a>
+      </div>
+    </section>
+    <section class="container cont">
+      <div class="calendar">
+        <div class="month">
+          <i class="fas fa-angle-left prev"> </i>
+          <div class="date">
+            <h1></h1>
+            <p></p>
+          </div>
+          <i class="fas fa-angle-right next"> </i>
+        </div>
+        <div class="weekdays">
+          <div>Dom</div>
+          <div>Seg</div>
+          <div>Ter</div>
+          <div>Qua</div>
+          <div>Qui</div>
+          <div>Sex</div>
+          <div>Sáb</div>
+        </div>
+        <div class="days"></div>
+      </div>
+    </section>
+    <footer>
+      <div class="footer">
+        <div class="container">
+          <div class="grid-8 footer_historia">
+            <h3>Nossa história</h3>
+            <p>
+              "O verdadeiro segredo de fazer deliciosas pizzas está na paixão,
+              carinho, dedicação e preparo, ingredientes que não pode faltar em
+              uma pizzaria"
+            </p>
+          </div>
+          <div class="grid-4 footer_contato">
+            <h3>Contato</h3>
+            <ul>
+              <li>- 11 4715 3120</li>
+              <li>- Alumínio - SP</li>
+            </ul>
+          </div>
+          <div class="grid-4 footer_redes">
+            <h3>Redes sociais</h3>
+            <ul>
+              <li>
+                <a class="fb" href="https://facebook.com" target="_blank"
+                  ><img src="/images/facebook.png" alt=""
+                /></a>
+              </li>
+              <li>
+                <a href="https://instagram.com" target="_blank"
+                  ><img src="/images/instagram.png" alt=""
+                /></a>
+              </li>
+              <li>
+                <a href="https://whatsapp.com" target="_blank"
+                  ><img src="/images/whatsapp.png" alt=""
+                /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="copy">
+        <div class="container">
+          <p class="grid-16">
+            Chamy Pizzas 2020 - Alguns os direitos reservados
+          </p>
+        </div>
+      </div>
+    </footer>
+    <script src="/javascripts/calendar.js"></script>
+
+
+    
+
+    
+    <style>
+      .agendarhorario{
+        margin-left: 300px;
+      }
+      .modal-container {
+        width: 100vw;
+        height: 100vh;
+        background: rgba(0,0,0,.5);
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        z-index: 2000;
+        display: none;
+        justify-content: center;
+        align-items: center;
+      }
+  
+      .modal-container.mostrar {
+        display: flex;
+      }
+  
+      .modal {
+        background: white;
+        width: 60%;
+        min-width: 300px;
+        padding: 40px;
+        border: 10px solid #fdca3b;
+        box-shadow: 0 0 0 10px white;
+        position: relative;
+      }
+  
+      @keyframes modal {
+        from {
+          opacity: 0;
+          transform: translate3d(0, -60px, 0);
+        }
+        to {
+          opacity: 1;
+          transform: translate3d(0, 0, 0);
+        }
+      }
+  
+      .mostrar .modal {
+        animation: modal .3s;
+      }
+  
+      .fechar {
+        position: absolute;
+        font-size: 1.2em;
+        top: -30px;
+        right: -30px;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        border: 4px solid white;
+        background: #fdca3b;
+        color: white;
+        font-family: "PT Mono", monospace;
+        cursor: pointer;
+        box-shadow: 0 4px 4px 0 rgba(0,0,0,.3);
+      }
+    </style>
+  
+    <div id="modal-promocao" class="modal-container">
+      <div class="modal">
+        <button class="fechar">x</button>
+        <h3 class="subtitulo">Agendar horario</h3>
+        <form action="/agendar" method="POST">
+          <p>
+            Você está criando um agendamento para o chamy pizzas. Por favor,
+            confira o dia e horário e depois clique no botão "Agendar horário"
+            para confirmar.
+          </p>
+          <button class="btn btn-preto agendarhorario" type="submit">agendar horario</button>
+        </form>
+      </div>
+    </div>
+  
+    <script>
+    
+      function iniciaModal(modalID) {
+        
+          const modal = document.getElementById(modalID);
+          if(modal) {
+            modal.classList.add('mostrar');
+            modal.addEventListener('click', (e) => {
+              if(e.target.id == modalID || e.target.className == 'fechar') {
+                modal.classList.remove('mostrar');
+                
+              }
+            });
+          }
+        
+      }
+  
+      const logo = document.querySelector('.days');
+      logo.addEventListener('click', () => iniciaModal('modal-promocao'));
+  
+      
+  
+    </script>
+  </body>
+</html>

@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.interna_sobre {
+  background: url("/images/agendar.png") no-repeat center;
+  background-size: cover;
+}
+.calendario {
+  text-align: right;
+}
+.calendario .btn-preto {
+  display: inline-block;
+  margin: 20px 0 20px 40px;
+}
+html {
+  font-size: 62.5%;
+}
+.cont {
+  width: 100%;
+  height: 100%;
+
+  color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.calendar {
+  width: 45rem;
+  height: 52rem;
+  background-color: #ffffff;
+  box-shadow: 0.5rem 3rem rgba(0, 0, 0, 0, 4);
+}
+.month {
+  width: 100%;
+  height: 12rem;
+  background-color: #fdca3b;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  text-align: center;
+  text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0, 5);
+}
+.month i {
+  font-size: 2.5rem;
+  cursor: pointer;
+}
+
+.month h1 {
+  font-size: 24px;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  margin-bottom: 1rem;
+}
+.month p {
+  font-size: 18px;
+}
+
+.weekdays {
+  width: 100%;
+  height: 5rem;
+
+  display: flex;
+  align-items: center;
+}
+
+.weekdays div {
+  font-size: 1.5rem;
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+  width: calc(44.2rem / 7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.days {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0.2rem;
+}
+.days div {
+  font-size: 1.4rem;
+  margin: 0.3rem;
+  width: calc(40.2rem / 7);
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.2s;
+}
+
+.days div:hover:not(.today) {
+  background-color: #f5f5f5;
+  border: 0.2rem solid #777;
+  cursor: pointer;
+}
+
+.prev-date,
+.next-date {
+  opacity: 0.5;
+}
+
+.today {
+  background-color: #fdca3b;
+}
+
+.modal a:hover {
+  cursor: pointer;
+}
+
+.modal-container {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  background: rgba(0, 0, 0, 0.5);
+  top: 0px;
+  left: 0px;
+  z-index: 2000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modal {
+  background: white;
+  width: 55%;
+  min-width: 300px;
+  padding: 40px;
+  border: 10px solid #fdca3b;
+}
+
+@keyframes modal {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -60px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+.mostrar .modal {
+  animation: modal 0.3s;
+}
+
+.modal p {
+  margin-bottom: 20px;
+}
+
+.modal .cancelar {
+  margin-left: 325px;
+}
+
+.modal-container.mostrar {
+  display: flex;
+}
